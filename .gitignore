@@ -1,0 +1,43 @@
+# OS
+.DS_Store
+
+# IDE/editor
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Kotlin/Gradle build artifacts
+.gradle/
+build/
+out/
+**/build/
+
+# Kotlin/JVM artifacts
+*.class
+*.kotlin_module
+
+# Dependency directories
+node_modules/
+
+# Frontend build/test output
+dist/
+coverage/
+.nyc_output/
+
+# JVM crash logs
+hs_err_pid*
