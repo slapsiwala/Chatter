@@ -7,9 +7,12 @@ import io.ktor.server.routing.*
 
 fun Application.configureRouting() {
     routing {
-        get("/") {
-            call.respondText("Hello, World!")
+        // Quick check that the server is up
+        get("/health") {
+            call.respondText("OK")
         }
-        staticResources("/static", "static")
+
+        // Serves the frontend files from resources/static at the root URL
+        staticResources("/", "static")
     }
 }
